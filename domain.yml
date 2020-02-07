@@ -1,0 +1,266 @@
+session_config:
+  session_expiration_time: 60.0
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- blockchain
+- machinelearning
+- appdev
+- projects
+- anyother
+- clients
+- webdevelopment
+- android
+- IOS
+- flutter
+- crossplatform
+- reactnative
+- enterprise
+- hyperledger
+- crypto
+- stodevelopment
+- php
+- reactjs
+- meanstack
+- angularjs
+- wordpress
+- aboutus
+- returntomainmenu
+- contactus
+- nameofuser
+- emailofuser
+- inform
+- form_name
+- publicbc
+- backforbc
+- privatebc
+- icosto
+- dapps
+- smartcontract
+- team
+entities:
+- name
+- email
+slots:
+  email:
+    type: text
+  name:
+    type: text
+templates:
+  utter_allfieldshow:
+  - text: Hello, We at SoluLab Inc provide services in following domain?
+    buttons:
+    - payload: Blockchain
+      title: Blockchain
+    - payload: App Development
+      title: App Development
+    - payload: Web Development
+      title: Web Development
+    - payload: Machine Learning
+      title: Machine Learning
+    - payload: Any other
+      title: Any other
+    - payload: Contact Us
+      title: Contact Us
+  utter_anyother:
+  - text: This are some details of our company
+    buttons:
+    - payload: About us
+      title: About us
+    - payload: Projects
+      title: Projects
+    - payload: Our clients
+      title: Our clients
+    - payload: Return to main menu
+      title: Return to main menu
+  utter_appdevinfo:
+  - text: Alright! In App Dev we provide assisstance in following things.
+    buttons:
+    - payload: Android
+      title: Android
+    - payload: IOS
+      title: IOS
+    - payload: Flutter
+      title: Flutter
+    - payload: Cross platform
+      title: Cross platform
+    - payload: React Native
+      title: React Native
+    - payload: Return to main menu
+      title: Return to main menu
+  utter_bcinfo:
+  - text: Alright! In Blockchain we do projects in follwing domain.
+    buttons:
+    - payload: Public BC
+      title: Public BC
+    - payload: Private BC
+      title: Private BC
+    - payload: ICO/STO
+      title: ICO/STO
+    - payload: DApps
+      title: DApps
+    - payload: Own BC Network
+      title: Own BC Network
+    - payload: Tokenomics Model
+      title: Tokenomics Model
+    - payload: Smart Contract
+      title: Smart Contract
+    - payload: Team
+      title: Team
+    - payload: Return to main menu
+      title: Return to main menu
+  utter_hello:
+  - text: Hello
+  utter_mlinfo:
+  - text: Alright! For machine Learning you can contact Mohan at 7550190040
+    buttons:
+    - title: Return to Main Menu
+      payload: Return to Main Menu
+  utter_projects:
+  - text: This are some of our popular projects for our client Aladin BlockChain,
+      Versafit, Cama BlockChain, Plotos and many more. You can visit our website https://www.solulab.com/
+      for more details.
+    buttons:
+    - title: Return to Main Menu
+      payload: Return to Main Menu
+  utter_tyfortalking:
+  - text: Thank you for talking to me!
+  utter_web_info:
+  - text: Alright! In Web Dev we provide assisstance in following things.
+    buttons:
+    - payload: Php
+      title: Php
+    - payload: React JS
+      title: React JS
+    - payload: Mean Stack
+      title: Mean Stack
+    - payload: Angular JS
+      title: Angular JS
+    - payload: Wordpress
+      title: Wordpress
+    - payload: Return to Main Menu
+      title: Return to Main Menu
+  utter_clients:
+  - text: This are our popular clients.
+    image: http://pngimg.com/uploads/walt_disney/walt_disney_PNG48.png
+    buttons:
+    - title: Return to Main Menu
+      payload: Return to Main Menu
+  utter_aboutusinfo:
+  - text: Our core focus is on quality, punctuality and devotion to the client requirements.       We
+      strive to bring the best out of our Web and App Ninjas. We put our leg into       the
+      shoe of our clients to understand their requirements and we add heart to       technology
+      while delivering their desired output.
+    buttons:
+    - title: Return to Main Menu
+      payload: Return to Main Menu
+  utter_publicbc:
+  - text: There are two option which would you like to chose?
+    buttons:
+    - payload: Ethereum
+      title: Ethereum
+    - payload: EOS
+      title: EOS
+    - payload: Back
+      title: Back
+  utter_privatebc:
+  - text: There are three options which would you like to go with?
+    buttons:
+    - payload: Hyperlegder Fabrics
+      title: Hyperledger Fabrics
+    - payload: Hyperledger Burrow
+      title: Hpyperledger Burrow
+    - payload: Hyperledger Sawtooth
+      title: Hperledger Sawtooth
+    - payload: Back
+      title: Back
+  utter_ICO/STO:
+  - text: 'We are experts in providing guidar tokens. We specialise in '
+    buttons:
+    - payload: ERC 20
+      title: ERC 20
+    - payload: EOS
+      title: EOS
+    - payload: Back
+      title: Back
+  utter_ownbcnetwork:
+  - text: Why rely on other Blockchain networks ? The  team of highly talented individual
+      at Solulab would help you create your own Blockchain network where you can define  your
+      Tokenomics Model, Consensus Algorithms and have everything under your  control.
+    buttons:
+    - payload: Back
+      title: Back
+  utter_DApps:
+  - text: Solulab would help  you create your world-class decentralised application
+      from scratch.
+    buttons:
+    - payload: Back
+      title: Back
+  utter_tokenomicsmodel:
+  - text: Planning to have your token still confused about the  token distribution
+      model .The team of analysts would help you develop a perfect model for all your
+      business needs.
+    buttons:
+    - payload: Back
+      title: Back
+  utter_smartcontract:
+  - text: The adroit developers at solulab would help you with the smart contact for
+      all your business logic.
+    buttons:
+    - payload: Back
+      title: Back
+  utter_team:
+  - text: Please fill the forms so that we can contact you.
+    buttons:
+    - payload: Fill the Form
+      title: Fill the Form
+    - payload: Back
+      title: Back
+  utter_contactlink:
+  - text: Please click on the below link for getting in contact https://www.solulab.com/#contacts
+    buttons:
+    - payload: Return to Main Menu
+      title: Return to Main Menu
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_hello
+- utter_allfieldshow
+- utter_mlinfo
+- utter_androidinfo
+- utter_web_info
+- utter_bcinfo
+- utter_anyother
+- utter_projects
+- utter_test
+- utter_tyfortalking
+- utter_appdevinfo
+- utter_android
+- utter_clients
+- utter_aboutusinfo
+- utter_askname
+- utter_askemail
+- utter_nameandemail
+- utter_service
+- utter_name_email
+- utter_finishform
+- utter_blockchain
+- utter_publicbc
+- utter_privatebc
+- utter_ICO/STO
+- utter_ownbcnetwork
+- utter_DApps
+- utter_tokenomicsmodel
+- utter_smartcontract
+- utter_team
+- utter_contactlink
